@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h1>Form for sigma web development</h1>
+    <form action="post">
+        <!-- post and get post -->
+        <lsabel for="username"></lsabel>
+        <!-- id cannot be given to other -->
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <div>
+             <label>Gender:</label>
+             <input type="radio" id="male" name="gender" value="male">
+             <label for="male">Male</label>
+             <input type="radio" id="female" name="gender" value="female">
+             <label for="female">Female</label>
+        </div>
+        <div>
+            <label>Newsletter:</label>
+            <input type="radio" id="YES" name="opinion" value="YES">
+            <label for="male">YES</label>
+            <input type="radio" id="NO" name="opinion" value="NO">
+            <label for="female">NO</label>
+        </div>
+        <div>
+            <label>Do you like playing?</label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <label for="comment">Enter your suggestions</label>
+            <br>
+            <textarea name="comment" rows="4" cols="50">
+            </textarea>
+        </div>
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+          </select>
+        </div>
+    </form>
+    <br>
+    
+    <!-- combining text area and Select -->
+    <form action="/submit">
+        <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+        <br>
+        <select name="fruits">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="cherry">Cherry</option>
+        </select>
+        <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
